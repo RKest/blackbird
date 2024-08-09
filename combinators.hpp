@@ -61,6 +61,7 @@ constexpr auto lt_    = [](auto x) { return [x](auto y) { return y < x; }; };
 constexpr auto _lt_   = std::less{};
 constexpr auto _lte_  = std::less_equal{};
 constexpr auto _gt_   = std::greater{};
+constexpr auto _gt    = [](auto x) { return [x](auto y) { return x < y; }; };
 constexpr auto _gte   = [](auto x) { return [x](auto y) { return x >= y; }; };
 constexpr auto _gte_  = std::greater_equal{};
 constexpr auto _plus  = [](auto x) { return [x](auto y) { return x + y; }; };
