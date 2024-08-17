@@ -90,6 +90,7 @@ constexpr auto _max_  = [](auto x, auto y) { return std::max(x, y); };
 // conversions
 constexpr auto _int    = [](auto x) { return static_cast<int>(x); };
 constexpr auto _uint   = [](auto x) { return static_cast<unsigned int>(x); };
+constexpr auto _size_t   = [](auto x) { return static_cast<size_t>(x); };
 constexpr auto _bool   = [](auto x) { return static_cast<bool>(x); };
 constexpr auto _float  = [](auto x) { return static_cast<float>(x); };
 constexpr auto _double = [](auto x) { return static_cast<double>(x); };
